@@ -21,6 +21,19 @@ def extract_quantity_from_product_name(product_name, category_name):
         "leche" : r"(\d+(?:[.,]\d+)?\s?(?:l|litros?|ml|g|gr|cl|g)|\d+\s?(?:uds\.?|botes|x)\s?\d+(?:[.,]\d+)?\s?(?:l|ml|g|gr|cl|g))"
     }
 
+    conversions_abbr = {
+        "gramos": "g",
+        "kilogramos": "kg",
+        "miligramo": "mg",
+        "miligramos": "mg",
+        "litros": "l",
+        "litro": "l",
+        "mililitro": "ml",
+        "mililitros": "ml",
+        "centilitro": "cl",
+        "centilitros": "cl"
+        }
+
     conversions_magnitude = {'g': 1, 'kg': 1000, 'mg': 0.001, 'l': 1, 'ml': 0.001, 'cl': 0.01}
     conversions_unit = {'g': 'g', 'kg': 'g', 'mg': 'g', 'l': 'l', 'ml': 'l', 'cl': 'l'}
 
@@ -28,12 +41,13 @@ def extract_quantity_from_product_name(product_name, category_name):
         quantity_magnitude_unit = re.findall(patterns[category_name], product_name.lower())[0]
         quantity = re.findall(r"(\d+)\s?x", quantity_magnitude_unit)[0]
     except:
-        quantity = np.nan
+        quantity = 1
 
     try:
         units = re.findall(r"\d\s?(\w{1,2})$", quantity_magnitude_unit)[0]
+        units = conversions_abbr.get(units,units)
     except:
-        units = np.nan
+        units = None
 
     try:
         magnitude = re.findall(r"(?:\d\s?x\s?)?(\d?\.?\d+)\s?\w{1,2}?", quantity_magnitude_unit.replace(",","."))[0]
@@ -47,40 +61,54 @@ def extract_quantity_from_product_name(product_name, category_name):
 
 
 def extract_brand(product_name):
-    brands = ["hacendado", "casa juncal", "carrefour", "campomar nature", "la masia", "ybarra", "carbonell", "koipe",
-          "la espanola", "natursoy", "dcoop", "k arginano", "oro bailen", "capricho andaluz", "coosur", "de nuestra tierra",
-          "oleum", "maestros de hojiblanca", "jaencoop", "guillen", "la laguna", "senorio de segura", "puleva",
-          "asturiana", "kaiku", "alcampo", "pascual", "president", "santa teresa", "nivea", "flora", "mustela",
-          "babaria", "babybio", "cantero de letur", "ultzama", "movit", "rianxeira", "el buen pastor", "eroski",
-          "natura ecologica", "la colmenarena", "larsa", "ram", "vega de oro", "leyma natura", "priegola", "pravia",
-          "llet nostra", "mantequilla bujia", "comansi", "montecelio", "caprea", "ecobasic", "artinata", "caprilait",
-          "pasqualet", "fageda", "granja noe", "mimosa", "aiguafreda", "lacturale", "el castillo", "rio", "villacorona",
-          "arla", "elosol", "diazol", "sveltesse", "ideal", "saha", "etnia", "leyenda", "bove", "valdezarza", "duc",
-          "aires de jaen", "cambil", "olea espana", "cuatro esquinas", "quinta aldea", "arroyo de jaen", "mueloliva",
-          "finca penamoucho", "coop solera", "beneo", "picualia", "pure bios", "les gallines", "dominus", "cortijo spiritu",
-          "al-tabwa", "dos lunas", "la redonda", "quesos casario", "arcos", "aguilar de la frontera", "olivar de segura",
-          "tierra de sabor", "coosol", "capicua", "fontasol", "ozolife", "abaco", "aromas del sur", "marques de grinon",
-          "nunez de prado", "retama", "ondoliva", "verde segura", "suroliva", "saeta", "oro", "celta", "l.r.", "nestle",
-          "president", "lauki", "montbelle", "oleoestepa", "aceites de ardales", "abril", "fuenroble", "olivar del sur",
-          "olibeas", "oliva verde", "oleodiel", "oleaurum", "somontano", "oleo cazorla", "mar de olivos", "carbonel",
-          "ucasol", "borges", "ondosol", "la masia", "cexasol", "granja noe", "lar", "letona", "lilibet", "lletera",
-          "madriz", "unicla", "valles unidos", "auchan", "dia", "hipercor", "danone", "maeva", "santa teresa",
-          "ecran sunnique", "nectar of bio", "denenes", "covap", "lanisol", "urzante", "olilan", "palacio de los olivos",
-          "nekeas", "carapelli", "hojiblanca", "cazorliva", "arrolan", "saqura", "mil olivas", "don arroniz", "elizondo",
-          "beyena", "bomilk", "euskal herria", "bizkaia esnea", "gaza", "el corte ingles", "agus", "alhema de queiles",
-          "aljibes", "almaoliva", "amarga y pica", "arboleda", "casas de hualdo", "castillo de canena", "changlot real",
-          "conde de benalua", "ester sole", "ferrarini", "flor de arana", "germanor", "go vegg", "hacienda el palo",
-          "iznaoliva", "jacoliva", "k arguinano", "l'estornell", "la almazara de canjayar", "la boella", "la organic cuisine",
-          "merula", "miro", "molino de olivas de bolea", "pago baldios san carlos", "parqueoliva", "reales almazaras de alcaniz",
-          "romanico", "santiveri", "tresces", "unio", "valroble", "venta del baron", "altamira", "ato", "clesa", "ecomil",
-          "feiraco", "la yerbera", "el lagar del soto", "el molino d gines", "fruto del sur", "giralda", "karlos arguinano",
-          "monegros", "oleocazorla", "laban", "santa gadea", "k. arguinano", "lactebal"]
-    
+    brands = ['primer dia de cosecha', 'mendia',
+    'natursoy', 'l.r.', 'nunez de prado', 'laban', 'ram', 'hojiblanca', 'oleodiel', "l'estornell", 'president', 
+    'la masia', 'la laguna', 'aromas del sur', 'carbonel', 'feiraco', 'carrefour', 'kaiku', 'suroliva', 'ferrarini', 
+    'el buen pastor', 'de nuestra tierra', 'aceites de ardales', 'priegola', 'montbelle', 'alhema de queiles', 
+    'ecran sunnique', 'almaoliva', 'amarga y pica', 'capricho andaluz', 'carapelli', 'ondosol', 'tierra de sabor', 
+    'verde segura', 'eroski', 'larsa', 'ideal', 'jacoliva', 'go vegg', 'lanisol', 'saqura', 'saha', 'oliva verde', 
+    'merula', 'oro', 'arrolan', 'la boella', 'reales almazaras de alcaniz', 'carbonell', 'marques de grinon', 
+    'finca penamoucho', 'la almazara de canjayar', 'elizondo', 'bomilk', 'mueloliva', 'hacienda el palo', 'fontasol', 
+    'euskal herria', 'oro bailen', 'jaencoop', 'cantero de letur', 'miro', 'flor de arana', 'covap', 'cexasol', 
+    'babaria', 'parqueoliva', 'gaza', 'pago baldios san carlos', 'lacturale', 'mar de olivos', 'agus', 'lauki', 
+    'palacio de los olivos', 'casas de hualdo', 'madriz', 'don arroniz', 'oleoestepa', 'dcoop', 'leyma natura', 
+    'borges', 'alcampo', 'giralda', 'duc', 'coosur', 'nekeas', 'santa teresa', 'ucasol', 'dominus', 'lar', 'abril', 
+    'beyena', 'romanico', 'ester sole', 'koipe', 'capicua', 'lletera', 'puleva', 'babybio', 'retama', 'granja noe', 
+    'nestle', 'santiveri', 'valroble', 'mustela', 'la yerbera', 'clesa', 'campomar nature', 'oleocazorla', 'ozolife', 
+    'urzante', 'sveltesse', 'casa juncal', 'olilan', 'k arginano', 'hacendado', 'olivar de segura', 'flora', 
+    'el corte ingles', 'picualia', 'la colmenarena', 'unicla', 'guillen', 'celta', 'altamira', 'coosol', 'arboleda', 
+    'ybarra', 'conde de benalua', 'saeta', 'maestros de hojiblanca', 'el molino d gines', 'iznaoliva', 'maeva', 
+    'denenes', 'lactebal', 'bizkaia esnea', 'la organic cuisine', 'aljibes', 'k. arguinano', 'el lagar del soto', 
+    'ecomil', 'fruto del sur', 'olivar del sur', 'mil olivas', 'villacorona', 'valdezarza', 'oleum', 'pascual', 
+    'karlos arguinano', 'tresces', 'fuenroble', 'oleo cazorla', 'ato', 'cambil', 'lilibet', 'ondoliva', 'changlot real', 
+    'somontano', 'nectar of bio', 'molino de olivas de bolea', 'germanor', 'cazorliva', 'venta del baron', 'elosol', 
+    'la redonda', 'olibeas', 'abaco', 'nivea', 'letona', 'santa gadea', 'monegros', 'asturiana', 'rio', 'llet nostra', 
+    'danone', 'la espanola', 'castillo de canena', 'valles unidos', 'unio', 'oleaurum', 'senorio de segura', 'ultzama', 
+    'el castillo', 'dia'
+    ]
+
+    brands = sorted(brands, key=len, reverse=True)
+
+    normalizations = {
+        "k arginano": "karlos arguinano",
+        "k. arguinano": "karlos arguinano",
+        "karlos arguinano": "karlos arguinano",
+        "carbonel": "carbonell",
+        "el molino d gines": "el molino de gines",
+        "la española": "la espanola",
+        "oleo cazorla": "oleocazorla",
+        "coop": "dcoop",
+        "arrolan": "arrolan",
+        "oleaestepa": "oleoestepa",
+        "bailén": "oro bailen"
+    }
+
     for brand in brands:
         if brand in product_name:
-            return brand
+            return normalizations.get(brand,brand)
     else:
         return "otras"
+
     
 
 
@@ -101,7 +129,6 @@ def extract_distinction_eco(product_name, category):
             distinction += " calcio"       
         if not pd.isna(distinction) and "proteinas" in product_name:
             distinction += " proteinas"
-        
         if not pd.isna(distinction) and "fresca" in product_name:
             distinction += " fresca"
 
@@ -133,13 +160,13 @@ def extract_subcategory(product_name, category, distinction):
 
     elif category == "leche": # leche
         if "cabra" in product_name:
-            subcategory = "leche cabra"
+            subcategory = "cabra"
         elif "vaca" in product_name:
-            subcategory = "leche vaca"
+            subcategory = "vaca"
         elif "condensada" in product_name:
-            subcategory = "leche condensada"
+            subcategory = "condensada"
         elif "leche" in product_name:
-            subcategory = "leche vaca"
+            subcategory = "vaca"
         else: 
             subcategory = "otras"
 

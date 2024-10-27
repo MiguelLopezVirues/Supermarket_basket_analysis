@@ -29,8 +29,46 @@ def connect_to_database(database, credentials_dict):
             print(f"Error occurred: {e}", e.pgcode)
         return None
 
+def connect_and_query(database, credentials_dict, query, columns = "query"):
 
-def upsert_brand(conn, brand_name):
+    # establish connection
+    connection = connect_to_database(database=database, credentials_dict=credentials_dict)
+    cursor = connection.cursor()
+
+    # launch query
+    cursor.execute(query)
+
+    # take column names from query or user input
+    if columns == "query":
+        columns = [desc[0] for desc in cursor.description]
+    elif not isinstance(columns, list):
+        columns = None
+
+    result_df = pd.DataFrame(cursor.fetchall(), columns=columns)
+
+    # close connection
+    cursor.close()
+    connection.close()
+    
+    return result_df
+
+def alter_update_query(database, credentials_dict, alter_update_query):
+    # establish connection
+    connection = connect_to_database(database=database, credentials_dict=credentials_dict)
+    cursor = connection.cursor()
+
+    with cursor:
+
+        cursor.execute(alter_update_query)
+
+        connection.commit()
+
+    cursor.close()
+    connection.close()
+
+
+
+def insert_brand(conn, brand_name):
     with conn.cursor() as cursor:
         cursor.execute(
             "SELECT brand_id FROM brands WHERE brand_name = %s", (brand_name,)
@@ -51,7 +89,7 @@ def upsert_brand(conn, brand_name):
 
 
 
-def upsert_category(conn, category_name):
+def insert_category(conn, category_name):
     with conn.cursor() as cursor:
         cursor.execute(
             "SELECT category_id FROM categories WHERE category_name = %s", (category_name,)
@@ -71,7 +109,7 @@ def upsert_category(conn, category_name):
     return category_id
 
 
-def upsert_subcategory(conn, subcategory_name, category_id, distinction=None, eco=False):
+def insert_subcategory(conn, subcategory_name, category_id, distinction=None, eco=False):
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -101,7 +139,7 @@ def upsert_subcategory(conn, subcategory_name, category_id, distinction=None, ec
 
 
 
-def upsert_supermarket(conn, supermarket_name):
+def insert_supermarket(conn, supermarket_name):
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -122,7 +160,7 @@ def upsert_supermarket(conn, supermarket_name):
             supermarket_id = supermarket_id[0]
     return supermarket_id
 
-def upsert_product(conn, brand_id, subcategory_id, product_name_norm, quantity, units, volume_weight):
+def insert_product(conn, brand_id, subcategory_id, product_name_norm, quantity, units, volume_weight):
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -153,7 +191,7 @@ def upsert_product(conn, brand_id, subcategory_id, product_name_norm, quantity, 
             # print(f"Producto existente con id {product_id},  {product_name_norm}")
     return product_id
 
-def upsert_supermarket_product(conn, supermarket_id, product_id, facua_url, product_name_supermarket):
+def insert_supermarket_product(conn, supermarket_id, product_id, facua_url, product_name_supermarket):
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -183,7 +221,7 @@ def upsert_supermarket_product(conn, supermarket_id, product_id, facua_url, prod
     return supermarket_product_id
 
 
-def upsert_price(conn, price_table_data):
+def insert_price(conn, price_table_data):
     with conn.cursor() as cursor:
         for supermarket_product_id, date, price_amount in price_table_data:
   

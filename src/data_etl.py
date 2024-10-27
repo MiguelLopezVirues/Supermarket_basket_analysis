@@ -4,6 +4,8 @@ import os
 import numpy as np
 import time
 
+from tqdm import tqdm
+
 from dotenv import load_dotenv
 load_dotenv()
 database_credentials = {
@@ -13,13 +15,13 @@ database_credentials = {
 
 from unidecode import unidecode
 
-from support.data_extraction_support_async import fetch, get_supermarkets_links, get_categories_links, get_product_names_links
+from support.data_extraction_support import fetch, get_supermarkets_links, get_categories_links, get_product_names_links
 
 from support.data_transformation_support import extract_distinction_eco, extract_subcategory, get_subcategory_distinction
 from support.data_transformation_support import extract_brand, extract_quantity_from_product_name, create_table_df, get_product_info, parse_date
 
-from support.data_load_support import save_to_csv, create_db_pool, upsert_brand, upsert_category, upsert_product, upsert_subcategory
-from support.data_load_support import upsert_supermarket, upsert_supermarket_product, upsert_price
+from support.data_load_support import save_to_csv, insert_brand, insert_category, insert_product, insert_subcategory
+from support.data_load_support import insert_supermarket, insert_supermarket_product, insert_price, connect_to_database
 
 
 # Function to extract and process table data for a product link
@@ -48,16 +50,16 @@ def get_table_from_product_link(conn, link, product_name):
 
     if eco:
         product_name_norm + " eco"
-    # python src/v2_data_extraction_asyncio.py
+
     # Database insertion
-    brand_id = upsert_brand(conn, brand_name)
-    supermarket_id = upsert_supermarket(conn, supermarket_name)
-    category_id = upsert_category(conn, category_name)
-    subcategory_id = upsert_subcategory(conn, subcategory, category_id, distinction, eco)
-    product_id = upsert_product(conn, brand_id, subcategory_id, product_name_norm, quantity, units, volume_weight)
-    supermarket_product_id = upsert_supermarket_product(conn, supermarket_id, product_id, link, product_name)
+    brand_id = insert_brand(conn, brand_name)
+    supermarket_id = insert_supermarket(conn, supermarket_name)
+    category_id = insert_category(conn, category_name)
+    subcategory_id = insert_subcategory(conn, subcategory, category_id, distinction, eco)
+    product_id = insert_product(conn, brand_id, subcategory_id, product_name_norm, quantity, units, volume_weight)
+    supermarket_product_id = insert_supermarket_product(conn, supermarket_id, product_id, link, product_name)
     price_table_data = [(supermarket_product_id, parse_date(row[0]), row[1]) for row in table_body_list]
-    upsert_price(conn, price_table_data)
+    insert_price(conn, price_table_data)
 
     # Save as CSV
     save_to_csv(table_df, supermarket_name, category_name, product_name)

@@ -1,2 +1,2 @@
 Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
-24/07/2024,8.10,"aceite de oliva virgen extra coosur, botella 50 cl",coosur,,1.0,,virgen extra,,False,aceite_de_oliva,eroski,https://super.facua.org/eroski/aceite-de-oliva/aceite-de-oliva-virgen-extra-coosur-botella-50-cl/
+24/07/2024,8.10,"aceite de oliva virgen extra coosur, botella 50 cl",coosur,1,1.0,,virgen extra,,False,aceite_de_oliva,eroski,https://super.facua.org/eroski/aceite-de-oliva/aceite-de-oliva-virgen-extra-coosur-botella-50-cl/

@@ -1,2 +1,2 @@
 Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
-24/07/2024,45.39,"aceite de oliva 0,4o ybarra, lata 5 litros",ybarra,,5.0,l,suave,,False,aceite_de_oliva,eroski,https://super.facua.org/eroski/aceite-de-oliva/aceite-de-oliva-04-ybarra-lata-5-litros/
+24/07/2024,45.39,"aceite de oliva 0,4o ybarra, lata 5 litros",ybarra,1,5.0,l,suave,,False,aceite_de_oliva,eroski,https://super.facua.org/eroski/aceite-de-oliva/aceite-de-oliva-04-ybarra-lata-5-litros/
