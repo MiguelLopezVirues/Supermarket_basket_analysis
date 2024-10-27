@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,08/08/2024,17.69,Leche Protectora Solar Spf50 Broncea+ Ecran Sunnique 270 Ml.,,0.27,l,leche,carrefour,https://super.facua.org/carrefour/leche/leche-protectora-solar-spf50-broncea-ecran-sunnique-270-ml-/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+08/08/2024,17.69,leche protectora solar spf50 broncea+ ecran sunnique 270 ml.,lar,,0.27,l,leche vaca,,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-protectora-solar-spf50-broncea-ecran-sunnique-270-ml-/

@@ -1,14 +1,14 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,20/07/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-1,21/07/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-2,31/07/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-3,09/08/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-4,12/08/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-5,15/08/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-6,17/08/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-7,12/09/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-8,20/09/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-9,24/09/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-10,30/09/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-11,01/10/2024,1.76,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
-12,14/10/2024,1.79,Puleva Leche Fresca Desnatada Botella 1 L,,1.0,l,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+20/07/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+21/07/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+31/07/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+09/08/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+12/08/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+15/08/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+17/08/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+12/09/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+20/09/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+24/09/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+30/09/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+01/10/2024,1.76,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/
+14/10/2024,1.79,puleva leche fresca desnatada botella 1 l,puleva,,1.0,l,leche vaca,desnatada fresca,False,leche,hipercor,https://super.facua.org/hipercor/leche/puleva-leche-fresca-desnatada-botella-1-l/

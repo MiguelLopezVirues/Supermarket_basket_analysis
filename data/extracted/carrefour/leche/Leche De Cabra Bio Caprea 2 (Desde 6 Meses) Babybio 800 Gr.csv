@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,08/08/2024,22.77,Leche De Cabra Bio Caprea 2 (Desde 6 Meses) Babybio 800 Gr,,800.0,g,leche,carrefour,https://super.facua.org/carrefour/leche/leche-de-cabra-bio-caprea-2-desde-6-meses-babybio-800-gr-/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+08/08/2024,22.77,leche de cabra bio caprea 2 (desde 6 meses) babybio 800 gr,babybio,,800.0,g,leche cabra,,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-de-cabra-bio-caprea-2-desde-6-meses-babybio-800-gr-/

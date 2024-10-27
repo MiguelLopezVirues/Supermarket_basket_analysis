@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,08/08/2024,6.89,Boletus En Aceite De Oliva De Nuestra Tierra 230 G.,,,,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/boletus-en-aceite-de-oliva-de-nuestra-tierra-230-g/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+08/08/2024,6.89,boletus en aceite de oliva de nuestra tierra 230 g.,de nuestra tierra,,1.0,,otras,,False,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/boletus-en-aceite-de-oliva-de-nuestra-tierra-230-g/

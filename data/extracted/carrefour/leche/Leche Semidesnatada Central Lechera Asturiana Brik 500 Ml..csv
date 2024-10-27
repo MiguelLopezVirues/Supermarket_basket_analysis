@@ -1,7 +1,8 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,16/10/2024,0.72,Leche Semidesnatada Central Lechera Asturiana Brik 500 Ml.,,0.5,l,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
-1,17/10/2024,0.72,Leche Semidesnatada Central Lechera Asturiana Brik 500 Ml.,,0.5,l,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
-2,18/10/2024,0.72,Leche Semidesnatada Central Lechera Asturiana Brik 500 Ml.,,0.5,l,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
-3,21/10/2024,0.72,Leche Semidesnatada Central Lechera Asturiana Brik 500 Ml.,,0.5,l,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
-4,22/10/2024,0.72,Leche Semidesnatada Central Lechera Asturiana Brik 500 Ml.,,0.5,l,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
-5,26/10/2024,0.72,Leche Semidesnatada Central Lechera Asturiana Brik 500 Ml.,,0.5,l,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+16/10/2024,0.72,leche semidesnatada central lechera asturiana brik 500 ml.,asturiana,,0.5,l,leche vaca,semidesnatada,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
+17/10/2024,0.72,leche semidesnatada central lechera asturiana brik 500 ml.,asturiana,,0.5,l,leche vaca,semidesnatada,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
+18/10/2024,0.72,leche semidesnatada central lechera asturiana brik 500 ml.,asturiana,,0.5,l,leche vaca,semidesnatada,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
+21/10/2024,0.72,leche semidesnatada central lechera asturiana brik 500 ml.,asturiana,,0.5,l,leche vaca,semidesnatada,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
+22/10/2024,0.72,leche semidesnatada central lechera asturiana brik 500 ml.,asturiana,,0.5,l,leche vaca,semidesnatada,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
+26/10/2024,0.72,leche semidesnatada central lechera asturiana brik 500 ml.,asturiana,,0.5,l,leche vaca,semidesnatada,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/
+27/10/2024,0.72,leche semidesnatada central lechera asturiana brik 500 ml.,asturiana,,0.5,l,leche vaca,semidesnatada,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-semidesnatada-central-lechera-asturiana-brik-500-ml-/

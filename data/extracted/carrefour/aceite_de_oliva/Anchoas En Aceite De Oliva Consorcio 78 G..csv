@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,08/08/2024,5.69,Anchoas En Aceite De Oliva Consorcio 78 G.,,,,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/anchoas-en-aceite-de-oliva-consorcio-78-g/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+08/08/2024,5.69,anchoas en aceite de oliva consorcio 78 g.,otras,,1.0,,otras,,False,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/anchoas-en-aceite-de-oliva-consorcio-78-g/

@@ -1,3 +1,3 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,06/08/2024,5.45,Gazpacho Con Aceite De Oliva Virgen Extra Santa Teresa Sin Gluten 1 L.,,1.0,l,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/gazpacho-con-aceite-de-oliva-virgen-extra-santa-teresa-sin-gluten-1-l/
-1,08/08/2024,5.45,Gazpacho Con Aceite De Oliva Virgen Extra Santa Teresa Sin Gluten 1 L.,,1.0,l,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/gazpacho-con-aceite-de-oliva-virgen-extra-santa-teresa-sin-gluten-1-l/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+06/08/2024,5.45,gazpacho con aceite de oliva virgen extra santa teresa sin gluten 1 l.,santa teresa,,1.0,l,otras,,False,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/gazpacho-con-aceite-de-oliva-virgen-extra-santa-teresa-sin-gluten-1-l/
+08/08/2024,5.45,gazpacho con aceite de oliva virgen extra santa teresa sin gluten 1 l.,santa teresa,,1.0,l,otras,,False,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/gazpacho-con-aceite-de-oliva-virgen-extra-santa-teresa-sin-gluten-1-l/

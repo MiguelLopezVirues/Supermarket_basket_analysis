@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,24/07/2024,7.51,"Aceite De Oliva Virgen Extra Cazorliva, Botella 50 Cl",,,,aceite_de_oliva,eroski,https://super.facua.org/eroski/aceite-de-oliva/aceite-de-oliva-virgen-extra-cazorliva-botella-50-cl/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+24/07/2024,7.51,"aceite de oliva virgen extra cazorliva, botella 50 cl",cazorliva,,1.0,,virgen extra,,False,aceite_de_oliva,eroski,https://super.facua.org/eroski/aceite-de-oliva/aceite-de-oliva-virgen-extra-cazorliva-botella-50-cl/

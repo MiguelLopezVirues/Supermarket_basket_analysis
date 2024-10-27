@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,08/08/2024,11.15,Anchoa Con Aceite De Oliva Virgen Extra Lorea Gourmet 125 G.,,,,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/anchoa-con-aceite-de-oliva-virgen-extra-lorea-gourmet-125-g/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+08/08/2024,11.15,anchoa con aceite de oliva virgen extra lorea gourmet 125 g.,otras,,1.0,,otras,,False,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/anchoa-con-aceite-de-oliva-virgen-extra-lorea-gourmet-125-g/

@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,13/09/2024,1.00,Pascual Leche De Vaca Entera 1 L.,,1.0,l,leche,alcampo,https://super.facua.org/alcampo/leche/pascual-leche-de-vaca-entera-1-l/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+13/09/2024,1.00,pascual leche de vaca entera 1 l.,pascual,,1.0,l,leche vaca,entera,False,leche,alcampo,https://super.facua.org/alcampo/leche/pascual-leche-de-vaca-entera-1-l/

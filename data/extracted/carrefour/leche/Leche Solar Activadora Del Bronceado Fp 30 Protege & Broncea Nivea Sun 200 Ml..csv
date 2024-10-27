@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,08/08/2024,15.89,Leche Solar Activadora Del Bronceado Fp 30 Protege & Broncea Nivea Sun 200 Ml.,,0.2,l,leche,carrefour,https://super.facua.org/carrefour/leche/leche-solar-activadora-del-bronceado-fp-30-protege-broncea-nivea-sun-200-ml-/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+08/08/2024,15.89,leche solar activadora del bronceado fp 30 protege & broncea nivea sun 200 ml.,nivea,,0.2,l,leche vaca,,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-solar-activadora-del-bronceado-fp-30-protege-broncea-nivea-sun-200-ml-/

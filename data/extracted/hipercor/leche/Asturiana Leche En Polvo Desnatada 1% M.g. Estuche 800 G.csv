@@ -1,14 +1,14 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,20/07/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-1,21/07/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-2,31/07/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-3,09/08/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-4,12/08/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-5,15/08/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-6,17/08/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-7,12/09/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-8,20/09/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-9,24/09/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-10,30/09/2024,7.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-11,01/10/2024,7.65,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
-12,14/10/2024,8.50,Asturiana Leche En Polvo Desnatada 1% M.g. Estuche 800 G,,800.0,g,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+20/07/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+21/07/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+31/07/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+09/08/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+12/08/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+15/08/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+17/08/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+12/09/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+20/09/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+24/09/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+30/09/2024,7.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+01/10/2024,7.65,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/
+14/10/2024,8.50,asturiana leche en polvo desnatada 1% m.g. estuche 800 g,asturiana,,800.0,g,leche vaca,desnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/asturiana-leche-en-polvo-desnatada-1-mg-estuche-800-g/

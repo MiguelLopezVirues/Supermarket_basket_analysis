@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,08/08/2024,9.48,"Aceite Oliva Virgen Extra Hojiblanca Carbonell, Botella 1 Litro",,1.0,l,aceite_de_oliva,eroski,https://super.facua.org/eroski/aceite-de-oliva/aceite-oliva-virgen-extra-hojiblanca-carbonell-botella-1-litro/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+08/08/2024,9.48,"aceite oliva virgen extra hojiblanca carbonell, botella 1 litro",carbonell,,1.0,l,virgen extra,,False,aceite_de_oliva,eroski,https://super.facua.org/eroski/aceite-de-oliva/aceite-oliva-virgen-extra-hojiblanca-carbonell-botella-1-litro/

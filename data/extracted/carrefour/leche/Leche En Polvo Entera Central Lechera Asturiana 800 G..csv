@@ -1,3 +1,3 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,06/08/2024,10.59,Leche En Polvo Entera Central Lechera Asturiana 800 G.,,800.0,g,leche,carrefour,https://super.facua.org/carrefour/leche/leche-en-polvo-entera-central-lechera-asturiana-800-g-/
-1,01/09/2024,10.65,Leche En Polvo Entera Central Lechera Asturiana 800 G.,,800.0,g,leche,carrefour,https://super.facua.org/carrefour/leche/leche-en-polvo-entera-central-lechera-asturiana-800-g-/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+06/08/2024,10.59,leche en polvo entera central lechera asturiana 800 g.,asturiana,,800.0,g,leche vaca,entera,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-en-polvo-entera-central-lechera-asturiana-800-g-/
+01/09/2024,10.65,leche en polvo entera central lechera asturiana 800 g.,asturiana,,800.0,g,leche vaca,entera,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-en-polvo-entera-central-lechera-asturiana-800-g-/

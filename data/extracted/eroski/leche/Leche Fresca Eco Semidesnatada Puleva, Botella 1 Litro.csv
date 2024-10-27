@@ -1,16 +1,16 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,15/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-1,16/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-2,17/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-3,18/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-4,19/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-5,20/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-6,21/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-7,22/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-8,28/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-9,29/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-10,30/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-11,31/07/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-12,01/08/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-13,03/08/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
-14,14/08/2024,1.85,"Leche Fresca Eco Semidesnatada Puleva, Botella 1 Litro",,1.0,l,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+15/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+16/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+17/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+18/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+19/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+20/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+21/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+22/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+28/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+29/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+30/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+31/07/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+01/08/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+03/08/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/
+14/08/2024,1.85,"leche fresca eco semidesnatada puleva, botella 1 litro",puleva,,1.0,l,leche vaca,semidesnatada fresca,True,leche,eroski,https://super.facua.org/eroski/leche/leche-fresca-eco-semidesnatada-puleva-botella-1-litro/

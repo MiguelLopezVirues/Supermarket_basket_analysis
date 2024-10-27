@@ -1,85 +1,86 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,15/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-1,16/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-2,17/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-3,18/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-4,19/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-5,20/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-6,21/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-7,22/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-8,23/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-9,24/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-10,25/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-11,26/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-12,27/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-13,29/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-14,30/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-15,31/07/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-16,01/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-17,02/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-18,03/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-19,04/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-20,05/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-21,06/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-22,07/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-23,08/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-24,09/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-25,10/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-26,11/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-27,12/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-28,13/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-29,14/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-30,15/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-31,16/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-32,18/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-33,19/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-34,20/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-35,22/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-36,23/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-37,24/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-38,25/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-39,26/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-40,27/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-41,28/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-42,29/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-43,30/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-44,31/08/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-45,01/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-46,02/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-47,03/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-48,04/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-49,05/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-50,06/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-51,07/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-52,08/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-53,09/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-54,10/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-55,11/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-56,12/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-57,13/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-58,16/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-59,17/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-60,18/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-61,19/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-62,20/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-63,21/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-64,23/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-65,24/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-66,25/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-67,26/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-68,27/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-69,28/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-70,29/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-71,30/09/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-72,01/10/2024,1.68,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-73,02/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-74,14/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-75,15/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-76,16/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-77,17/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-78,18/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-79,19/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-80,21/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-81,23/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-82,24/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
-83,26/10/2024,1.71,"Leyma Natura Leche Semidesnatada Botella 1,5 L",,1.5,l,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+15/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+16/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+17/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+18/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+19/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+20/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+21/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+22/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+23/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+24/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+25/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+26/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+27/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+29/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+30/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+31/07/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+01/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+02/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+03/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+04/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+05/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+06/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+07/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+08/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+09/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+10/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+11/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+12/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+13/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+14/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+15/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+16/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+18/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+19/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+20/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+22/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+23/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+24/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+25/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+26/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+27/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+28/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+29/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+30/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+31/08/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+01/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+02/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+03/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+04/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+05/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+06/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+07/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+08/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+09/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+10/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+11/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+12/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+13/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+16/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+17/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+18/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+19/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+20/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+21/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+23/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+24/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+25/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+26/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+27/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+28/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+29/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+30/09/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+01/10/2024,1.68,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+02/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+14/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+15/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+16/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+17/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+18/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+19/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+21/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+23/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+24/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+26/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/
+27/10/2024,1.71,"leyma natura leche semidesnatada botella 1,5 l",leyma natura,,1.5,l,leche vaca,semidesnatada,False,leche,hipercor,https://super.facua.org/hipercor/leche/leyma-natura-leche-semidesnatada-botella-15-l/

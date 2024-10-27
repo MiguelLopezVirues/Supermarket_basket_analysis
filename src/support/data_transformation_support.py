@@ -5,6 +5,10 @@ import numpy as np
 # regular expressions
 import re 
 
+from unidecode import unidecode
+
+from datetime import datetime
+
 def sanitize_filename(filename):
     return re.sub(r'[<>:"/\\|?*]', '', filename)
 
@@ -36,8 +40,8 @@ def extract_quantity_from_product_name(product_name, category_name):
     except:
         magnitude = 1
 
-    magnitude = float(magnitude) * conversions_magnitude.get(units, np.nan)
-    units = conversions_unit.get(units, np.nan)
+    magnitude = float(magnitude) * conversions_magnitude.get(units, 1)
+    units = conversions_unit.get(units, None)
 
     return quantity, magnitude, units
 
@@ -76,4 +80,115 @@ def extract_brand(product_name):
         if brand in product_name:
             return brand
     else:
-        return np.nan
+        return "otras"
+    
+
+
+def extract_distinction_eco(product_name, category):
+    distinction = ""
+
+    if category == "leche":
+        if "semidesnatada" in product_name:
+            distinction = "semidesnatada"
+        elif "desnatada" in product_name:
+            distinction = "desnatada"
+        elif "entera" in product_name:
+            distinction = "entera"
+
+        if not pd.isna(distinction) and "lactosa" in product_name:
+            distinction += " sin lactosa"
+        if not pd.isna(distinction) and "calcio" in product_name:
+            distinction += " calcio"       
+        if not pd.isna(distinction) and "proteinas" in product_name:
+            distinction += " proteinas"
+        
+        if not pd.isna(distinction) and "fresca" in product_name:
+            distinction += " fresca"
+
+    if " eco " in product_name or "ecologic" in product_name:
+        eco = True
+    else:
+        eco = False
+
+    return distinction, eco
+
+
+def extract_subcategory(product_name, category, distinction):
+    if category == "aceite_de_girasol":
+        if "freir" in product_name:
+            subcategory = "freir"
+        else:
+            subcategory = "normal"
+
+
+    elif category == "aceite_de_oliva" and "en aceite" not in product_name and "con aceite" not in product_name:
+        if "virgen extra" in product_name:
+            subcategory = "virgen extra"
+        elif "virgen"  in product_name:
+            subcategory = "virgen"
+        elif "intenso"  in product_name:
+            subcategory = "intenso"
+        else:
+            subcategory = "suave"
+
+    elif category == "leche": # leche
+        if "cabra" in product_name:
+            subcategory = "leche cabra"
+        elif "vaca" in product_name:
+            subcategory = "leche vaca"
+        elif "condensada" in product_name:
+            subcategory = "leche condensada"
+        elif "leche" in product_name:
+            subcategory = "leche vaca"
+        else: 
+            subcategory = "otras"
+
+    else:
+        subcategory = "otras"
+
+    return subcategory
+
+
+def get_subcategory_distinction(product_name, category):
+    distinction, eco = extract_distinction_eco(product_name, category)
+    subcategory = extract_subcategory(product_name, category, distinction)
+
+    return subcategory, distinction, eco
+
+
+def create_table_df(table_head_list,table_body_list, product_name, brand_name, quantity, 
+        volume_weight, units, subcategory, distinction, eco, category_name, 
+        supermarket_name, link):
+
+    table_body_list_filled = [(row[0], row[1].replace(",", "."), product_name, brand_name, quantity, 
+        volume_weight, units, subcategory, distinction, eco, category_name, 
+        supermarket_name, link) for row in table_body_list]
+    
+
+    table_head_list.extend(["product_name", "brand","quantity", "volume_weight", "units",
+                            "subcategory", "distinction","eco",
+                            "category_name", "supermarket_name", "url"])
+    
+    table_df = pd.DataFrame(table_body_list_filled, columns=table_head_list)
+
+    return table_df
+
+
+
+
+def get_product_info(link, product_name):
+
+    category_name = link.split("/")[4].replace("-", "_")
+    supermarket_name = link.split("/")[3]
+    product_name = sanitize_filename(unidecode(product_name.lower()))
+
+    brand_name = extract_brand(product_name)
+
+    quantity, volume_weight, units = extract_quantity_from_product_name(product_name, category_name)
+
+    subcategory, distinction, eco = get_subcategory_distinction(product_name, category_name)
+
+    return product_name, brand_name, quantity, volume_weight, units, subcategory, distinction, eco, category_name, supermarket_name
+
+def parse_date(date_str):
+    return datetime.strptime(date_str, '%d/%m/%Y').date()

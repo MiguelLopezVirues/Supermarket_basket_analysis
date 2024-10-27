@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,01/09/2024,24.00,Leche De Crecimiento Hipp Combiotik 3 800 G.,,800.0,g,leche,carrefour,https://super.facua.org/carrefour/leche/leche-de-crecimiento-hipp-combiotik-3-800-g-/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+01/09/2024,24.00,leche de crecimiento hipp combiotik 3 800 g.,otras,,800.0,g,leche vaca,,False,leche,carrefour,https://super.facua.org/carrefour/leche/leche-de-crecimiento-hipp-combiotik-3-800-g-/

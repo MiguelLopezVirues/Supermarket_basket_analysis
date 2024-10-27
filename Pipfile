@@ -20,6 +20,7 @@ tqdm = "*"
 aiohttp = "*"
 asyncio = "*"
 unidecode = "*"
+asyncpg = "*"
 
 [dev-packages]
 

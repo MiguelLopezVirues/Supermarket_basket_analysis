@@ -1,2 +1,2 @@
-,Día,Precio (€),product_name,quantity,magnitude,units,category_name,supermarket_name,url
-0,01/09/2024,2.59,Margarina Light Con Aceite De Oliva Carrefour 500 G.,,,,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/margarina-light-con-aceite-de-oliva-carrefour-500-g/
+Día,Precio (€),product_name,brand,quantity,volume_weight,units,subcategory,distinction,eco,category_name,supermarket_name,url
+01/09/2024,2.59,margarina light con aceite de oliva carrefour 500 g.,carrefour,,1.0,,otras,,False,aceite_de_oliva,carrefour,https://super.facua.org/carrefour/aceite-de-oliva/margarina-light-con-aceite-de-oliva-carrefour-500-g/
