@@ -21,6 +21,7 @@ aiohttp = "*"
 asyncio = "*"
 unidecode = "*"
 asyncpg = "*"
+scipy = "*"
 
 [dev-packages]
 

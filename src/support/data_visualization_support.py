@@ -36,26 +36,32 @@ def plot_bar_labels(ax, contrast=False):
         raise TypeError(f"Expected 'contrast' to be of type 'bool', but got {type(contrast).__name__} instead.")
     
     for bar in ax.patches:
-        bar_color = bar.get_facecolor()  # Get the color of the bar
-        
-        if contrast:
-            # Calculate perceived brightness of the bar color for contrast
-            r, g, b = bar_color[:3] 
-            brightness = (r * 299 + g * 587 + b * 114) / 1000  # Perceived brightness 
-            text_color = 'white' if brightness < 0.5 else 'black'  # White text on dark bars, black text on bright bars
-        else:
-            text_color = 'white'
-
-        # Label positioning
         height = bar.get_height()
-        x_position = bar.get_x() + bar.get_width() / 2
+        
+        # Only add a label if the height is above a threshold (e.g., 0.1)
+        if height > 0.01:  
 
-        # Annotate the bar with the height value
-        ax.text(
-            x_position, height / 2, f'{height:.2f}',  # Set label at half the height of the bar
-            ha='center', va='center', color=text_color,
-            bbox=dict(facecolor=bar_color, edgecolor='none', alpha=0.8)  # Background color to match bar color
-        )
+            bar_color = bar.get_facecolor()  # Get the color of the bar
+            
+            if contrast:
+                # Calculate perceived brightness of the bar color for contrast
+                r, g, b = bar_color[:3] 
+                brightness = (r * 299 + g * 587 + b * 114) / 1000  # Perceived brightness 
+                text_color = 'white' if brightness < 0.5 else 'black'  # White text on dark bars, black text on bright bars
+            else:
+                text_color = 'white'
+
+            # Label positioning
+            height = bar.get_height()
+            x_position = bar.get_x() + bar.get_width() / 2
+
+            # Annotate the bar with the height value
+            ax.text(
+                x_position, height / 2, f'{height:.2f}',  # Set label at half the height of the bar
+                ha='center', va='center', color=text_color,
+                bbox=dict(facecolor=bar_color, edgecolor='none', alpha=0.8),  # Background color to match bar color
+                fontsize=12) 
+        
 
 
 

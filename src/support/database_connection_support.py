@@ -1,4 +1,3 @@
-
 # database agent
 import psycopg2
 from psycopg2 import OperationalError, errorcodes, errors
@@ -6,34 +5,27 @@ from psycopg2 import OperationalError, errorcodes, errors
 # data processing
 import pandas as pd
 
+
 def connect_to_database(database, credentials_dict):
-
     try:
-        # define connection
         connection = psycopg2.connect(
-            database = database,
-            user = credentials_dict["username"],
-            password =  credentials_dict["password"],
+            database=database,
+            user=credentials_dict["username"],
+            password=credentials_dict["password"],
             host="localhost",
-            port="5432" 
+            port="5432"
         )
-
-
+        return connection
     except OperationalError as e:
-
         if e.pgcode == errorcodes.INVALID_PASSWORD:
-            print("La contraseña es erronea")
-
+            print("Invalid password.")
         elif e.pgcode == errorcodes.CONNECTION_EXCEPTION:
-            print("Error de conexión.")
-
+            print("Connection error.")
         else:
-            print(f"Ocurrio el error {e}",e.pgcode)
+            print(f"Error occurred: {e}", e.pgcode)
+        return None
 
-
-    return connection
-
-def connect_and_query(database, credentials_dict, query, columns = None):
+def connect_and_query(database, credentials_dict, query, columns = "query"):
 
     # establish connection
     connection = connect_to_database(database=database, credentials_dict=credentials_dict)
@@ -55,3 +47,17 @@ def connect_and_query(database, credentials_dict, query, columns = None):
     connection.close()
     
     return result_df
+
+def alter_update_query(database, credentials_dict, alter_update_query):
+    # establish connection
+    connection = connect_to_database(database=database, credentials_dict=credentials_dict)
+    cursor = connection.cursor()
+
+    with cursor:
+
+        cursor.execute(alter_update_query)
+
+        connection.commit()
+
+    cursor.close()
+    connection.close()

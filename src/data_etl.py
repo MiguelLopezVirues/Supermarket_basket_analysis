@@ -21,11 +21,12 @@ from support.data_transformation_support import extract_distinction_eco, extract
 from support.data_transformation_support import extract_brand, extract_quantity_from_product_name, create_table_df, get_product_info, parse_date
 
 from support.data_load_support import save_to_csv, insert_brand, insert_category, insert_product, insert_subcategory
-from support.data_load_support import insert_supermarket, insert_supermarket_product, insert_price, connect_to_database
+from support.data_load_support import insert_supermarket, insert_supermarket_product, insert_price
+from support.data_load_support import connect_to_database, drop_all_tables, create_all_tables
 
 
-# Function to extract and process table data for a product link
-def get_table_from_product_link(conn, link, product_name):
+# function to extract, process and load table data from a product link
+def get_table_from_product_link_etl(conn, link, product_name):
     content = fetch(link)
     if not content:
         return pd.DataFrame()
@@ -40,6 +41,8 @@ def get_table_from_product_link(conn, link, product_name):
     table_head_list = [element.text.strip() for element in table.find("thead").findAll("th")][:2]
     table_body_list = [[element.text.strip().replace(",",".") for element in row.findAll("td")][:2]
                        for row in table.find("tbody").findAll("tr")]
+    
+    product_name = product_data_soup.find("h2").text.strip()
 
     # Transform data for table and load into database
     product_name, brand_name, quantity, volume_weight, units, subcategory, distinction, eco, category_name, supermarket_name = get_product_info(link, product_name)
@@ -71,6 +74,10 @@ def main():
     if not conn:
         print("Failed to connect to database.")
         return
+    
+    # Create database structure
+    drop_all_tables(conn)
+    create_all_tables(conn)
 
     # Measure elapsed time
     start_time = time.time()
@@ -88,9 +95,9 @@ def main():
             # Fetch product names and links for each category
             product_names, product_links = get_product_names_links(category_link)
             for product_name, product_link in zip(product_names, product_links):
-                print(f"\n\nEvaluando producto {e}: {product_name}")
+  
                 # Extract table and process data for each product
-                df = get_table_from_product_link(conn, product_link, product_name)
+                df = get_table_from_product_link_etl(conn, product_link, product_name)
                 if not df.empty:
                     total_result_df = pd.concat([total_result_df, df])
                 e += 1

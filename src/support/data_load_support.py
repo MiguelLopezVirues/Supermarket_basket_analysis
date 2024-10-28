@@ -67,6 +67,126 @@ def alter_update_query(database, credentials_dict, alter_update_query):
     connection.close()
 
 
+def drop_all_tables(conn):
+    with conn.cursor() as cursor:
+
+        cursor.execute(
+            "DROP TABLE IF EXISTS products, categories, subcategories, prices, supermarkets, supermarkets_products, brands CASCADE;"
+        )
+
+        conn.commit()
+
+def create_all_tables(conn):
+    create_categories(conn)
+    create_subcategories(conn)
+    create_brands(conn)
+    create_supermarkets(conn)
+    create_products(conn)
+    create_supermarkets_products(conn)
+    create_prices(conn)
+
+def create_categories(conn):
+    with conn.cursor() as cursor:
+        
+        cursor.execute(
+            """
+            CREATE TABLE categories (
+                category_id SERIAL PRIMARY KEY,
+                category_name VARCHAR(100) NOT NULL
+            );
+            """
+        )
+
+        conn.commit()
+
+
+def create_subcategories(conn):
+    with conn.cursor() as cursor:
+        cursor.execute(
+            """
+            CREATE TABLE subcategories (
+                subcategory_id SERIAL PRIMARY KEY,
+                category_id INT REFERENCES categories(category_id) ON DELETE CASCADE ON UPDATE CASCADE,
+                subcategory_name VARCHAR(100) NOT NULL,
+                distinction VARCHAR(100),
+                eco BOOLEAN
+            );
+            """
+        )
+        conn.commit()
+
+def create_brands(conn):
+    with conn.cursor() as cursor:
+        cursor.execute(
+            """
+            CREATE TABLE brands (
+                brand_id SERIAL PRIMARY KEY,
+                brand_name VARCHAR(100) NOT NULL
+            );
+            """
+        )
+        conn.commit()
+
+def create_products(conn):
+    with conn.cursor() as cursor:
+        cursor.execute(
+            """
+            CREATE TABLE products (
+                product_id SERIAL PRIMARY KEY,
+                brand_id INT REFERENCES brands(brand_id) ON DELETE SET NULL ON UPDATE CASCADE,
+                subcategory_id INT REFERENCES subcategories(subcategory_id) ON DELETE SET NULL ON UPDATE CASCADE,
+                product_name_norm VARCHAR(200) NOT NULL,
+                quantity NUMERIC,
+                units VARCHAR(50),
+                volume_weight NUMERIC
+            );
+            """
+        )
+        conn.commit()
+
+def create_supermarkets(conn):
+    with conn.cursor() as cursor:
+        cursor.execute(
+            """
+            CREATE TABLE supermarkets (
+                supermarket_id SERIAL PRIMARY KEY,
+                supermarket_name VARCHAR(100) NOT NULL
+            );
+            """
+        )
+        conn.commit()
+
+def create_supermarkets_products(conn):
+    with conn.cursor() as cursor:
+        cursor.execute(
+            """
+            CREATE TABLE supermarkets_products (
+                supermarket_product_id SERIAL PRIMARY KEY,
+                supermarket_id INT REFERENCES supermarkets(supermarket_id) ON DELETE CASCADE ON UPDATE CASCADE,
+                product_id INT REFERENCES products(product_id) ON DELETE CASCADE ON UPDATE CASCADE,
+                facua_url VARCHAR(255),
+                product_name_supermarket VARCHAR(200)
+            );
+            """
+        )
+        conn.commit()
+
+def create_prices(conn):
+    with conn.cursor() as cursor:
+        cursor.execute(
+            """
+            CREATE TABLE prices (
+                price_id SERIAL PRIMARY KEY,
+                supermarket_product_id INT REFERENCES supermarkets_products(supermarket_product_id) ON DELETE CASCADE ON UPDATE CASCADE,
+                date DATE NOT NULL,
+                price_amount NUMERIC(10, 2) NOT NULL
+            );
+            """
+        )
+        conn.commit()
+
+
+
 
 def insert_brand(conn, brand_name):
     with conn.cursor() as cursor:
