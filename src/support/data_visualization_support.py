@@ -5,6 +5,7 @@ import matplotlib.dates as mdates
 import seaborn as sns
 
 
+
 def plot_line_labels(ax: plt.Axes, interval: int = 1, contrast: bool = False) -> None:
     """
     Adds labels to each line in the plot at specified intervals.

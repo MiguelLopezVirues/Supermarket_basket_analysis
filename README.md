@@ -29,18 +29,13 @@ project_name/
 │   ├── 3_data_load.ipynb
 │   └── 4_data_analysis.ipynb
 ├── src/                               # Source code for project scripts
+│   ├── data_etl.py
 │   └── support/                       # Supporting modules for each process
 │       ├── data_extraction_support.py
 │       ├── data_load_support.py
 │       ├── data_transformation_support.py
 │       ├── data_visualization_support.py
-│       ├── database_connection.py
-│       ├── data_etl_async_draft.py
-│       ├── data_etl.py
-│       ├── data_load_support_draft.py
-│       └── data_extraction_draft.py
-├── .env                               # Environment variables for secure configurations
-├── .gitignore                         # Files and directories to ignore in git
+│       └── database_connection.py
 ├── Pipfile                            # Dependency management file
 ├── Pipfile.lock                       # Lockfile for exact versions of dependencies
 └── README.md                          # Project documentation
@@ -56,19 +51,14 @@ This project requires the following tools and libraries:
 - seaborn
 - pandas
 - numpy
-- selenium
 - beautifulsoup4
 - ipykernel
 - psycopg2 (version 2.9.9)
 - requests
 - psycopg2-binary (version 2.9.9)
 - python-dotenv
-- webdriver-manager
 - tqdm
-- aiohttp
-- asyncio
 - unidecode
-- asyncpg
 - scipy
 
 **Documentation Links:**  
@@ -77,17 +67,12 @@ This project requires the following tools and libraries:
 - [Seaborn Documentation](https://seaborn.pydata.org/)  
 - [Pandas Documentation](https://pandas.pydata.org/)  
 - [NumPy Documentation](https://numpy.org/)  
-- [Selenium Documentation](https://selenium-python.readthedocs.io/)  
 - [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)  
 - [Psycopg2 Documentation](https://www.psycopg.org/docs/)  
 - [Requests Documentation](https://docs.python-requests.org/)  
 - [Python-dotenv Documentation](https://saurabh-kumar.com/python-dotenv/)  
-- [Webdriver-manager Documentation](https://github.com/SergeyPirogov/webdriver_manager)  
 - [TQDM Documentation](https://tqdm.github.io/)  
-- [Aiohttp Documentation](https://docs.aiohttp.org/en/stable/)  
-- [Asyncio Documentation](https://docs.python.org/3/library/asyncio.html)  
 - [Unidecode Documentation](https://pypi.org/project/Unidecode/)  
-- [Asyncpg Documentation](https://magicstack.github.io/asyncpg/current/)  
 - [Scipy Documentation](https://docs.scipy.org/doc/scipy/)  
 
 #### Setting up the Environment with Pipenv

@@ -9,7 +9,7 @@ import pandas as pd
 import os
 
 # functions typing
-from typing import Optional, Tuple, List, Union
+from typing import Optional, Tuple, List, Union, Dict
 
 
 def drop_all_tables(conn: psycopg2.extensions.connection) -> None:

@@ -5,6 +5,8 @@ from psycopg2 import OperationalError, errorcodes, errors
 # data processing
 import pandas as pd
 
+# functions typing
+from typing import Optional, Tuple, List, Union, Dict
 
 def connect_to_database(database: str, credentials_dict: Dict[str, str]) -> Optional[psycopg2.extensions.connection]:
     """
