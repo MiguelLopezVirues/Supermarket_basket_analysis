@@ -1,7 +1,7 @@
 
 # 📊 Basket price analysis
 <div style="text-align: center;">
-  <img src="assets/surfaces.png" alt="portada" />
+  <img src="assets/price_basket_analysis_banner.png" alt="portada" />
 </div>
 
 ## 📝 Project Overview
