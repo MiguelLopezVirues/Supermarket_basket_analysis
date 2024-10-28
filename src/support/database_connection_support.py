@@ -6,7 +6,22 @@ from psycopg2 import OperationalError, errorcodes, errors
 import pandas as pd
 
 
-def connect_to_database(database, credentials_dict):
+def connect_to_database(database: str, credentials_dict: Dict[str, str]) -> Optional[psycopg2.extensions.connection]:
+    """
+    Connects to a PostgreSQL database using provided credentials.
+
+    Parameters:
+    ----------
+    database : str
+        Name of the database to connect to.
+    credentials_dict : dict
+        Dictionary containing 'username' and 'password' for authentication.
+
+    Returns:
+    -------
+    Optional[psycopg2.extensions.connection]
+        A PostgreSQL database connection if successful, None otherwise.
+    """
     try:
         connection = psycopg2.connect(
             database=database,
@@ -25,39 +40,69 @@ def connect_to_database(database, credentials_dict):
             print(f"Error occurred: {e}", e.pgcode)
         return None
 
-def connect_and_query(database, credentials_dict, query, columns = "query"):
+def connect_and_query(database: str, credentials_dict: Dict[str, str], query: str, columns: Union[str, list] = "query") -> pd.DataFrame:
+    """
+    Connects to a database, executes a query, and returns the results as a DataFrame.
 
-    # establish connection
+    Parameters:
+    ----------
+    database : str
+        Name of the database to connect to.
+    credentials_dict : dict
+        Dictionary containing 'username' and 'password' for authentication.
+    query : str
+        SQL query to execute.
+    columns : Union[str, list], optional
+        Column names for the DataFrame. If 'query', uses columns from the query result.
+
+    Returns:
+    -------
+    pd.DataFrame
+        DataFrame containing the query results.
+    """
     connection = connect_to_database(database=database, credentials_dict=credentials_dict)
+    
+    if not connection:
+        return pd.DataFrame()  # Return an empty DataFrame if connection fails
+    
     cursor = connection.cursor()
-
-    # launch query
     cursor.execute(query)
-
-    # take column names from query or user input
+    
     if columns == "query":
         columns = [desc[0] for desc in cursor.description]
     elif not isinstance(columns, list):
         columns = None
-
+    
     result_df = pd.DataFrame(cursor.fetchall(), columns=columns)
-
-    # close connection
+    
     cursor.close()
     connection.close()
     
     return result_df
 
-def alter_update_query(database, credentials_dict, alter_update_query):
-    # establish connection
+def alter_update_query(database: str, credentials_dict: Dict[str, str], alter_update_query: str) -> None:
+    """
+    Connects to a database and executes an ALTER or UPDATE query.
+
+    Parameters:
+    ----------
+    database : str
+        Name of the database to connect to.
+    credentials_dict : dict
+        Dictionary containing 'username' and 'password' for authentication.
+    alter_update_query : str
+        SQL query for ALTER or UPDATE operations.
+    """
     connection = connect_to_database(database=database, credentials_dict=credentials_dict)
+    
+    if not connection:
+        return  # If connection fails, exit function
+    
     cursor = connection.cursor()
-
+    
     with cursor:
-
         cursor.execute(alter_update_query)
-
         connection.commit()
-
+    
     cursor.close()
     connection.close()
