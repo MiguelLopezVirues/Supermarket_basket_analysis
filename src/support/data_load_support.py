@@ -8,75 +8,34 @@ import pandas as pd
 # system
 import os
 
-
-# Database connection setup
-def connect_to_database(database, credentials_dict):
-    try:
-        connection = psycopg2.connect(
-            database=database,
-            user=credentials_dict["username"],
-            password=credentials_dict["password"],
-            host="localhost",
-            port="5432"
-        )
-        return connection
-    except OperationalError as e:
-        if e.pgcode == errorcodes.INVALID_PASSWORD:
-            print("Invalid password.")
-        elif e.pgcode == errorcodes.CONNECTION_EXCEPTION:
-            print("Connection error.")
-        else:
-            print(f"Error occurred: {e}", e.pgcode)
-        return None
-
-def connect_and_query(database, credentials_dict, query, columns = "query"):
-
-    # establish connection
-    connection = connect_to_database(database=database, credentials_dict=credentials_dict)
-    cursor = connection.cursor()
-
-    # launch query
-    cursor.execute(query)
-
-    # take column names from query or user input
-    if columns == "query":
-        columns = [desc[0] for desc in cursor.description]
-    elif not isinstance(columns, list):
-        columns = None
-
-    result_df = pd.DataFrame(cursor.fetchall(), columns=columns)
-
-    # close connection
-    cursor.close()
-    connection.close()
-    
-    return result_df
-
-def alter_update_query(database, credentials_dict, alter_update_query):
-    # establish connection
-    connection = connect_to_database(database=database, credentials_dict=credentials_dict)
-    cursor = connection.cursor()
-
-    with cursor:
-
-        cursor.execute(alter_update_query)
-
-        connection.commit()
-
-    cursor.close()
-    connection.close()
+# functions typing
+from typing import Optional, Tuple, List, Union
 
 
-def drop_all_tables(conn):
+def drop_all_tables(conn: psycopg2.extensions.connection) -> None:
+    """
+    Drops all tables from the database with CASCADE.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     with conn.cursor() as cursor:
-
         cursor.execute(
             "DROP TABLE IF EXISTS products, categories, subcategories, prices, supermarkets, supermarkets_products, brands CASCADE;"
         )
-
         conn.commit()
 
-def create_all_tables(conn):
+def create_all_tables(conn: psycopg2.extensions.connection) -> None:
+    """
+    Creates all tables in the database by calling specific creation functions.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     create_categories(conn)
     create_subcategories(conn)
     create_brands(conn)
@@ -85,9 +44,16 @@ def create_all_tables(conn):
     create_supermarkets_products(conn)
     create_prices(conn)
 
-def create_categories(conn):
+def create_categories(conn: psycopg2.extensions.connection) -> None:
+    """
+    Creates the 'categories' table in the database.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     with conn.cursor() as cursor:
-        
         cursor.execute(
             """
             CREATE TABLE categories (
@@ -96,11 +62,17 @@ def create_categories(conn):
             );
             """
         )
-
         conn.commit()
 
+def create_subcategories(conn: psycopg2.extensions.connection) -> None:
+    """
+    Creates the 'subcategories' table in the database with foreign key constraints.
 
-def create_subcategories(conn):
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -115,7 +87,15 @@ def create_subcategories(conn):
         )
         conn.commit()
 
-def create_brands(conn):
+def create_brands(conn: psycopg2.extensions.connection) -> None:
+    """
+    Creates the 'brands' table in the database.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -127,7 +107,15 @@ def create_brands(conn):
         )
         conn.commit()
 
-def create_products(conn):
+def create_products(conn: psycopg2.extensions.connection) -> None:
+    """
+    Creates the 'products' table in the database with foreign key constraints.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -144,7 +132,15 @@ def create_products(conn):
         )
         conn.commit()
 
-def create_supermarkets(conn):
+def create_supermarkets(conn: psycopg2.extensions.connection) -> None:
+    """
+    Creates the 'supermarkets' table in the database.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -156,7 +152,15 @@ def create_supermarkets(conn):
         )
         conn.commit()
 
-def create_supermarkets_products(conn):
+def create_supermarkets_products(conn: psycopg2.extensions.connection) -> None:
+    """
+    Creates the 'supermarkets_products' table with foreign key constraints.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -171,7 +175,15 @@ def create_supermarkets_products(conn):
         )
         conn.commit()
 
-def create_prices(conn):
+def create_prices(conn: psycopg2.extensions.connection) -> None:
+    """
+    Creates the 'prices' table with foreign key constraints.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
@@ -185,62 +197,102 @@ def create_prices(conn):
         )
         conn.commit()
 
+def insert_brand(conn: psycopg2.extensions.connection, brand_name: str) -> int:
+    """
+    Inserts a new brand or returns an existing brand ID.
 
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    brand_name : str
+        The name of the brand to insert or find.
 
-
-def insert_brand(conn, brand_name):
+    Returns:
+    -------
+    int
+        The ID of the brand.
+    """
     with conn.cursor() as cursor:
-        cursor.execute(
-            "SELECT brand_id FROM brands WHERE brand_name = %s", (brand_name,)
-        )
+        cursor.execute("SELECT brand_id FROM brands WHERE brand_name = %s", (brand_name,))
         brand_id = cursor.fetchone()
+        
         if not brand_id:
             cursor.execute(
                 "INSERT INTO brands (brand_name) VALUES (%s) RETURNING brand_id",
                 (brand_name,)
             )
             brand_id = cursor.fetchone()[0]
-            # print(f"Insercion exitosa id {brand_id}, marca {brand_name}")
             conn.commit()
         else:
             brand_id = brand_id[0]
-            # print(f"Marca existente con id {brand_id}, marca {brand_name}")
+    
     return brand_id
 
+def insert_category(conn: psycopg2.extensions.connection, category_name: str) -> int:
+    """
+    Inserts a new category or returns an existing category ID.
 
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    category_name : str
+        The name of the category to insert or find.
 
-def insert_category(conn, category_name):
+    Returns:
+    -------
+    int
+        The ID of the category.
+    """
     with conn.cursor() as cursor:
-        cursor.execute(
-            "SELECT category_id FROM categories WHERE category_name = %s", (category_name,)
-        )
+        cursor.execute("SELECT category_id FROM categories WHERE category_name = %s", (category_name,))
         category_id = cursor.fetchone()
+        
         if not category_id:
             cursor.execute(
                 "INSERT INTO categories (category_name) VALUES (%s) RETURNING category_id",
                 (category_name,)
             )
             category_id = cursor.fetchone()[0]
-            # print(f"Insercion exitosa id {category_id},  {category_name}")
             conn.commit()
         else:
             category_id = category_id[0]
-            # print(f"Categoria existente con id {category_id},  {category_name}")
+    
     return category_id
 
+def insert_subcategory(conn: psycopg2.extensions.connection, subcategory_name: str, category_id: int, distinction: Optional[str] = None, eco: bool = False) -> int:
+    """
+    Inserts a new subcategory or returns an existing subcategory ID.
 
-def insert_subcategory(conn, subcategory_name, category_id, distinction=None, eco=False):
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    subcategory_name : str
+        The name of the subcategory.
+    category_id : int
+        The ID of the parent category.
+    distinction : Optional[str]
+        Additional distinction information.
+    eco : bool
+        Whether the subcategory is eco-friendly.
+
+    Returns:
+    -------
+    int
+        The ID of the subcategory.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
             SELECT subcategory_id FROM subcategories 
-            WHERE subcategory_name = %s 
-            AND category_id = %s 
-            AND distinction = %s 
-            AND eco = %s""",
+            WHERE subcategory_name = %s AND category_id = %s AND distinction = %s AND eco = %s
+            """,
             (subcategory_name, category_id, distinction, eco)
         )
         subcategory_id = cursor.fetchone()
+        
         if not subcategory_id:
             cursor.execute(
                 """
@@ -250,51 +302,81 @@ def insert_subcategory(conn, subcategory_name, category_id, distinction=None, ec
                 (subcategory_name, category_id, distinction, eco)
             )
             subcategory_id = cursor.fetchone()[0]
-            # print(f"Insercion exitosa id {subcategory_id},  {subcategory_name}")
             conn.commit()
         else:
             subcategory_id = subcategory_id[0]
-            # print(f"Subategoria existente con id {subcategory_id},  {subcategory_name}")
+    
     return subcategory_id
 
+def insert_supermarket(conn: psycopg2.extensions.connection, supermarket_name: str) -> int:
+    """
+    Inserts a new supermarket or returns an existing supermarket ID.
 
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    supermarket_name : str
+        The name of the supermarket.
 
-def insert_supermarket(conn, supermarket_name):
+    Returns:
+    -------
+    int
+        The ID of the supermarket.
+    """
     with conn.cursor() as cursor:
-        cursor.execute(
-            """
-            SELECT supermarket_id 
-            FROM supermarkets 
-            WHERE supermarket_name = %s""", (supermarket_name,)
-        )
+        cursor.execute("SELECT supermarket_id FROM supermarkets WHERE supermarket_name = %s", (supermarket_name,))
         supermarket_id = cursor.fetchone()
+        
         if not supermarket_id:
             cursor.execute(
                 "INSERT INTO supermarkets (supermarket_name) VALUES (%s) RETURNING supermarket_id",
                 (supermarket_name,)
             )
             supermarket_id = cursor.fetchone()[0]
-            
             conn.commit()
         else:
             supermarket_id = supermarket_id[0]
+    
     return supermarket_id
 
-def insert_product(conn, brand_id, subcategory_id, product_name_norm, quantity, units, volume_weight):
+def insert_product(conn: psycopg2.extensions.connection, brand_id: Optional[int], subcategory_id: Optional[int], product_name_norm: str, quantity: Optional[float], units: Optional[str], volume_weight: Optional[float]) -> int:
+    """
+    Inserts a new product or returns an existing product ID.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    brand_id : Optional[int]
+        ID of the brand.
+    subcategory_id : Optional[int]
+        ID of the subcategory.
+    product_name_norm : str
+        Normalized product name.
+    quantity : Optional[float]
+        Quantity of the product.
+    units : Optional[str]
+        Units for the quantity.
+    volume_weight : Optional[float]
+        Volume or weight of the product.
+
+    Returns:
+    -------
+    int
+        The ID of the product.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
             SELECT product_id FROM products 
-            WHERE product_name_norm = %s 
-            AND brand_id = %s 
-            AND subcategory_id = %s 
-            AND quantity = %s 
-            AND units = %s 
-            AND volume_weight = %s
+            WHERE product_name_norm = %s AND brand_id = %s AND subcategory_id = %s 
+            AND quantity = %s AND units = %s AND volume_weight = %s
             """, 
             (product_name_norm, brand_id, subcategory_id, quantity, units, volume_weight)
         )
         product_id = cursor.fetchone()
+        
         if not product_id:
             cursor.execute(
                 """
@@ -304,26 +386,45 @@ def insert_product(conn, brand_id, subcategory_id, product_name_norm, quantity, 
                 (brand_id, subcategory_id, product_name_norm, quantity, units, volume_weight)
             )
             product_id = cursor.fetchone()[0]
-            # print(f"Insercion exitosa id {product_id},  {product_name_norm}")
             conn.commit()
         else:
             product_id = product_id[0]
-            # print(f"Producto existente con id {product_id},  {product_name_norm}")
+    
     return product_id
 
-def insert_supermarket_product(conn, supermarket_id, product_id, facua_url, product_name_supermarket):
+def insert_supermarket_product(conn: psycopg2.extensions.connection, supermarket_id: int, product_id: int, facua_url: str, product_name_supermarket: str) -> int:
+    """
+    Inserts a new supermarket-product or returns an existing ID.
+
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    supermarket_id : int
+        ID of the supermarket.
+    product_id : int
+        ID of the product.
+    facua_url : str
+        URL for the product in the supermarket.
+    product_name_supermarket : str
+        Product name as listed in the supermarket.
+
+    Returns:
+    -------
+    int
+        The ID of the supermarket-product.
+    """
     with conn.cursor() as cursor:
         cursor.execute(
             """
             SELECT supermarket_product_id FROM supermarkets_products 
-            WHERE supermarket_id = %s 
-            AND product_id = %s 
-            AND facua_url = %s 
-            AND product_name_supermarket = %s
+            WHERE supermarket_id = %s AND product_id = %s 
+            AND facua_url = %s AND product_name_supermarket = %s
             """,
             (supermarket_id, product_id, facua_url, product_name_supermarket)
         )
         supermarket_product_id = cursor.fetchone()
+        
         if not supermarket_product_id:
             cursor.execute(
                 """
@@ -333,30 +434,35 @@ def insert_supermarket_product(conn, supermarket_id, product_id, facua_url, prod
                 (supermarket_id, product_id, facua_url, product_name_supermarket)
             )
             supermarket_product_id = cursor.fetchone()[0]
-            print(f"Insercion exitosa id sup_id {supermarket_product_id}, prod_id {product_id}, name {product_name_supermarket}, facua_url {facua_url}")
             conn.commit()
         else:
             supermarket_product_id = supermarket_product_id[0]
-            print(f"Supermarket_product existente sup_id {supermarket_product_id}, prod_id {product_id}, name {product_name_supermarket}, facua_url {facua_url}")
+    
     return supermarket_product_id
 
+def insert_price(conn: psycopg2.extensions.connection, price_table_data: List[Tuple[int, str, float]]) -> None:
+    """
+    Inserts prices into the 'prices' table, avoiding duplicates.
 
-def insert_price(conn, price_table_data):
+    Parameters:
+    ----------
+    conn : psycopg2.extensions.connection
+        Connection to the PostgreSQL database.
+    price_table_data : List[Tuple[int, str, float]]
+        List of tuples containing supermarket_product_id, date, and price_amount.
+    """
     with conn.cursor() as cursor:
         for supermarket_product_id, date, price_amount in price_table_data:
-  
             cursor.execute(
                 """
                 SELECT price_id FROM prices 
-                WHERE supermarket_product_id = %s 
-                AND date = %s
+                WHERE supermarket_product_id = %s AND date = %s
                 """,
                 (supermarket_product_id, date)
             )
             price_id = cursor.fetchone()
-
+            
             if not price_id:
-
                 cursor.execute(
                     """
                     INSERT INTO prices (supermarket_product_id, date, price_amount)
@@ -364,12 +470,27 @@ def insert_price(conn, price_table_data):
                     """,
                     (supermarket_product_id, date, price_amount)
                 )
-
         conn.commit()
 
+def save_to_csv(df: pd.DataFrame, supermarket_name: Optional[str] = None, category_name: Optional[str] = None, product_name: Optional[str] = None, final: bool = False) -> None:
+    """
+    Saves a DataFrame to a CSV file in a structured path.
 
-def save_to_csv(df, supermarket_name=None, category_name=None, product_name=None, final=False):
+    Parameters:
+    ----------
+    df : pd.DataFrame
+        The DataFrame to save.
+    supermarket_name : Optional[str]
+        Name of the supermarket (for folder structure).
+    category_name : Optional[str]
+        Name of the category (for folder structure).
+    product_name : Optional[str]
+        Product name (for file name).
+    final : bool
+        If True, saves to the final consolidated path.
+    """
     base_path = os.path.dirname(os.path.abspath(__file__))
+    
     if not final:
         dir_path = os.path.join(base_path, '../../data/extracted/', supermarket_name, category_name)
         os.makedirs(dir_path, exist_ok=True)
